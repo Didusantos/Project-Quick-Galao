@@ -30,7 +30,6 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
 
         PainelPrincipalJPanel35 = new javax.swing.JPanel();
         CadastrarProdutosButton35 = new javax.swing.JButton();
-        VerificarProdutosButton = new javax.swing.JButton();
         RodapéPainel35 = new javax.swing.JPanel();
         InstituiçãoLabel35 = new javax.swing.JLabel();
         ProgramaNomeLabel35 = new javax.swing.JLabel();
@@ -49,13 +48,6 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
         CadastrarProdutosButton35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CadastrarProdutosButtonActionPerformed(evt);
-            }
-        });
-
-        VerificarProdutosButton.setText("Verificar/ Excluir");
-        VerificarProdutosButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ContasAPagarButtonActionPerformed(evt);
             }
         });
 
@@ -92,20 +84,20 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(86, 86, 86)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addGap(264, 264, 264))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(48, Short.MAX_VALUE)
+                .addContainerGap(47, Short.MAX_VALUE)
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32))
+                .addGap(33, 33, 33))
         );
 
-        VerificarProdutosButton1.setText("Atualizar produto");
+        VerificarProdutosButton1.setText("Gerenciar Produtos");
         VerificarProdutosButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VerificarProdutosButton1ContasAPagarButtonActionPerformed(evt);
@@ -119,24 +111,21 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
             .addComponent(RodapéPainel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(PainelPrincipalJPanel35Layout.createSequentialGroup()
-                .addGap(156, 156, 156)
-                .addGroup(PainelPrincipalJPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(VerificarProdutosButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VerificarProdutosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CadastrarProdutosButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(240, 240, 240)
+                .addComponent(CadastrarProdutosButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(58, 58, 58)
+                .addComponent(VerificarProdutosButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(237, Short.MAX_VALUE))
         );
         PainelPrincipalJPanel35Layout.setVerticalGroup(
             PainelPrincipalJPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PainelPrincipalJPanel35Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(CadastrarProdutosButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(VerificarProdutosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(VerificarProdutosButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addGap(97, 97, 97)
+                .addGroup(PainelPrincipalJPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VerificarProdutosButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CadastrarProdutosButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
                 .addComponent(RodapéPainel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -144,7 +133,9 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PainelPrincipalJPanel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(PainelPrincipalJPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,17 +146,13 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CadastrarProdutosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastrarProdutosButtonActionPerformed
-        CadastrarProdutosPanelJFrame ViewProdutos = new CadastrarProdutosPanelJFrame();
+        RegistrarProdutosPainelJFrame ViewProdutos = new RegistrarProdutosPainelJFrame();
         ViewProdutos.setVisible(true);
     }//GEN-LAST:event_CadastrarProdutosButtonActionPerformed
 
-    private void ContasAPagarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContasAPagarButtonActionPerformed
-        VerificarProdutosJFrame ViewProdutosVerificar = new VerificarProdutosJFrame();
-        ViewProdutosVerificar.setVisible(true);
-    }//GEN-LAST:event_ContasAPagarButtonActionPerformed
-
     private void VerificarProdutosButton1ContasAPagarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerificarProdutosButton1ContasAPagarButtonActionPerformed
-        // TODO add your handling code here:
+        AtualizarProdutoJFrame ViewAtualizarProdutos = new AtualizarProdutoJFrame();
+        ViewAtualizarProdutos.setVisible(true);
     }//GEN-LAST:event_VerificarProdutosButton1ContasAPagarButtonActionPerformed
 
     /**
@@ -209,7 +196,6 @@ public class MenuPrincipalJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel PainelPrincipalJPanel35;
     private javax.swing.JLabel ProgramaNomeLabel35;
     private javax.swing.JPanel RodapéPainel35;
-    private javax.swing.JButton VerificarProdutosButton;
     private javax.swing.JButton VerificarProdutosButton1;
     private javax.swing.JPanel jPanel1;
     private java.awt.Label label1;

@@ -38,7 +38,7 @@ public class ProdutoDAO {
             pstm.execute();
             pstm.close();
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Erro ao inserir, verifique ProdutoDAO"+ e);
             
         }
@@ -67,4 +67,25 @@ public class ProdutoDAO {
         }
         return lista;
     } 
+    
+    public void alterarProduto(ProdutoDTO objprodutodto){
+       String sql = "update produtos set nome = ?, capacidade_ml = ?, galao_status = ?, preco_unitario = ? where id = ?";  
+       
+       conn = new ConexaoDAO().conectaBD();
+       try {
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objprodutodto.getNome_produto());
+            pstm.setInt(2, objprodutodto.getCapacidade_produto());
+            pstm.setString(3, objprodutodto.getGalao_status());
+            pstm.setFloat(4, objprodutodto.getPreco_galao());
+            pstm.setInt(5, objprodutodto.getId_produto());
+            
+            pstm.execute();
+            pstm.close();
+            
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Erro ao atualizar, verifique ProdutoDAO"+ e);
+            
+        }
+    }
 }
